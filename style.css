@@ -110,13 +110,18 @@ footer {
     }
 
     .game h1 {
-        padding: 75px 20px;
+        font-size: 2.5em;
+        padding: 25px 20px;
+    }
+    
+    .game p {
+        font-size: 1.5em;
     }
 
     .counter-bar {
         padding: 0;
     }
-    
+
     footer {
         position: absolute;
         top: 0;
