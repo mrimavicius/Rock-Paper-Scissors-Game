@@ -13,29 +13,33 @@ body {
     height: 100vh;
 }
 
+.game {
+    border: 5px solid #F66B0E;
+    max-width: 650px;
+    margin: auto;
+}
+
 .game h1 {
     font-size: 3.5em;
-    margin: 150px 0;
+    padding: 100px 0;
 }
 
 .game h2 {
     letter-spacing: 2px;
     font-size: 2em;
-    margin-top: 100px;
 }
 
 .mobile {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    /* align-items: center; */
-    max-width: 650px;
     margin: auto;
+    padding: 0 25px;
 }
 
 .game button {
     padding: 12px;
-    margin: 20px 0;
+    margin: 20px 5px;
     width: 175px;
     border: 3px solid #F66B0E;
     background-color: #112B3C;
@@ -65,39 +69,52 @@ body {
     margin-bottom: 25px;
 }
 
-footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    /* margin: auto 10px; */
-    margin-bottom: 5px;
-    padding: 0 5px;
+.counter-bar {
+    padding-bottom: 100px;
 }
 
-@media (max-width: 630px){
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 0.6em;
+    color: #f66b0ea6;
+}
+
+@media (max-width: 768px){
     .game h1 {
         font-size: 3em;
-        margin: 75px 0;
+        padding: 100px 20px;
     }
 
     .game h2 {
-        margin-top: 25px;
     }
 
     .mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     .game button {
-        margin: 15px;
-        width: 200px;
+        width: 250px;
     }
 
     .game p {
         font-size: 1.8em;
-        margin: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .game {
+        margin: 0;
+        height: 100vh;
+    }
+
+    footer {
+        position: relative;
+        bottom: -85px;
     }
 }
 
