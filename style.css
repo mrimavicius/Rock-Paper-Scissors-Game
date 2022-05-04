@@ -8,14 +8,14 @@ body {
     text-align: center;
     background: #112B3C;
     color: #F66B0E;
-    display: flex;
-    flex-direction: column;
     height: 100vh;
 }
 
 .game {
-    border: 5px solid #F66B0E;
+    display: flex;
+    flex-direction: column;
     max-width: 650px;
+    height: 100%;
     margin: auto;
 }
 
@@ -79,12 +79,16 @@ footer {
     padding: 5px;
     font-size: 0.6em;
     color: #f66b0ea6;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px){
+    .game {
+        max-width: 550px;
+    }
     .game h1 {
         font-size: 3em;
-        padding: 100px 20px;
+        padding: 75px 20px;
     }
 
     .mobile {
@@ -106,9 +110,8 @@ footer {
 @media (max-width: 576px){
     .game {
         margin: 0;
-        height: 100vh;
     }
-
+    
     .game h1 {
         font-size: 2.5em;
         padding: 25px 20px;
@@ -123,9 +126,7 @@ footer {
     }
 
     footer {
-        position: absolute;
-        top: 0;
-        width: 95%;
+        margin-top: auto;
     }
 }
 
