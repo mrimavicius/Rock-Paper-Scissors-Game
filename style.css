@@ -86,7 +86,7 @@ footer {
         font-size: 3em;
         padding: 100px 20px;
     }
-    
+
     .mobile {
         display: flex;
         flex-direction: column;
@@ -109,9 +109,18 @@ footer {
         height: 100vh;
     }
 
+    .game h1 {
+        padding: 75px 20px;
+    }
+
+    .counter-bar {
+        padding: 0;
+    }
+    
     footer {
-        position: relative;
-        bottom: -85px;
+        position: absolute;
+        top: 0;
+        width: 95%;
     }
 }
 
