@@ -69,13 +69,19 @@ footer {
     margin-top: auto;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    /* margin: auto 10px; */
+    margin-bottom: 5px;
+    padding: 0 5px;
 }
 
 @media (max-width: 630px){
     .game h1 {
         font-size: 3em;
         margin: 75px 0;
+    }
+
+    .game h2 {
+        margin-top: 25px;
     }
 
     .mobile {
