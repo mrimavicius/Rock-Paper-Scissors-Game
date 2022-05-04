@@ -86,10 +86,7 @@ footer {
         font-size: 3em;
         padding: 100px 20px;
     }
-
-    .game h2 {
-    }
-
+    
     .mobile {
         display: flex;
         flex-direction: column;
