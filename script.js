@@ -3,7 +3,6 @@
 // v.2.0
 var buttons = document.getElementsByTagName("button")
 var roll = document.querySelector(".roll")
-var answerWas = document.querySelector(".answerWas")
 var result = document.querySelector(".result")
 var won = document.querySelectorAll("span")[0]
 var tied = document.querySelectorAll("span")[1]
@@ -75,6 +74,7 @@ for(var x of buttons){
     })
 }
 
+// Functions to print results and update counter
 function winWin() {
     result.innerText = (`You Won!`)
     result.style.color = "green"
