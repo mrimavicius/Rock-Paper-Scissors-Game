@@ -34,7 +34,7 @@ body {
     text-align: center;
     justify-content: space-around;
     margin: auto;
-    padding: 0 25px;
+    padding: 0 1.5em;
 }
 
 .game button {
@@ -48,12 +48,14 @@ body {
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 1.5em;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .game button:hover {
     background-color: #F66B0E;
     color: #112B3C;
+    border-radius: 0.5em;
+    transform: scale(1.2);
 }
 
 .game p {
@@ -61,23 +63,47 @@ body {
     letter-spacing: 2px;
 }
 
+.animation {
+    animation: rolling 0.2s linear;
+    animation-iteration-count: infinite;
+}
+
+.roll {
+    height: 165px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.roll p {
+    font-size: 3.2em;
+}
+
+.roll p i {
+    font-size: 2.5em;
+    margin: 0 0.6em;
+}
+
 .answerWas, .result {
     height: 50px;
 }
 
-.result {
-    margin-bottom: 25px;
+.game .result {
+    margin: auto;
+    font-size: 3em;
+    letter-spacing: 0;
     font-weight: bold;
 }
 
 .counter-bar {
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 6em;
     padding: 15px;
 }
 
 .counter-bar span {
     font-size: 1.3em;
+    color: #eee;
 }
 
 footer {
@@ -89,10 +115,20 @@ footer {
     margin-bottom: 10px;
 }
 
+@keyframes rolling {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(-2em)
+    }
+}
+
 @media (max-width: 768px){
     .game {
         max-width: 550px;
     }
+
     .game h1 {
         font-size: 3em;
         padding: 75px 20px;
@@ -112,6 +148,11 @@ footer {
     .game p {
         font-size: 1.8em;
     }
+
+    .roll {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 576px){
@@ -123,10 +164,6 @@ footer {
         font-size: 2.5em;
         padding: 25px 20px;
     }
-    
-    .game p {
-        font-size: 1.4em;
-    }
 
     .counter-bar {
         padding: 0;
@@ -136,4 +173,3 @@ footer {
         margin-top: auto;
     }
 }
-
