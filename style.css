@@ -20,7 +20,7 @@ body {
 
 .game h1 {
     font-size: 3.5em;
-    padding: 6em 0;
+    padding: 4em 0;
 }
 
 .game h2 {
@@ -72,6 +72,7 @@ body {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
+    height: 50%;
 }
 
 .roll p {
