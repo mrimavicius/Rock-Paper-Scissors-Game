@@ -84,8 +84,8 @@ body {
     margin: 0 0.6em;
 }
 
-.answerWas, .result {
-    height: 50px;
+.result {
+    height: 3em;
 }
 
 .game .result {
@@ -97,7 +97,7 @@ body {
 
 .counter-bar {
     margin: auto;
-    margin-bottom: 6em;
+    margin-bottom: auto;
     padding: 15px;
 }
 
