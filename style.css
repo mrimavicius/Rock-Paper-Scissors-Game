@@ -63,6 +63,7 @@ body {
 }
 
 .animation {
+    height: 100%;
     animation: rolling 0.2s linear;
     animation-iteration-count: infinite;
 }
@@ -83,7 +84,7 @@ body {
 }
 
 .result {
-    height: 3em;
+    height: 50%;
 }
 
 .game .result {
